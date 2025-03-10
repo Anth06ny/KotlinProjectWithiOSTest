@@ -2,9 +2,11 @@ package org.example.project.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import org.example.project.ui.screens.ImageCard
@@ -13,8 +15,8 @@ import org.example.project.ui.screens.ImageCard
 actual fun PictureGallery(urlList: List<String>) {
     Text("Hello from Desktop")
 
-    LazyRow(
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    LazyColumn (
+        verticalArrangement = Arrangement.spacedBy(12.dp),
         modifier = Modifier.fillMaxWidth()
     ) {
         items(urlList.size) {

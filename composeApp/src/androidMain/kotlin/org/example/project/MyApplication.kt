@@ -9,8 +9,8 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        initKoin {
-            androidContext(this@MyApplication)
-        }
+//        initKoin {
+//            androidContext(this@MyApplication)
+//        }
     }
 }
